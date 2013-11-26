@@ -1,2 +1,49 @@
-<h1>Employees#dashboard</h1>
-<p>Find me in app/views/employees/dashboard.html.erb</p>
+<div data-role='header'>
+     
+        <a href="/spring_boards/dashboard" data-role="button" data-icon="home" data-iconpos ="notext"   data-theme='a'>Config</a>
+      <h1>Employee Management</h1>
+
+      <a href="#" data-role="button" data-icon="info" data-iconpos ="notext"   data-theme='a'>Info</a>
+
+</div>
+
+
+<div data-role="content">
+
+
+	<div class="ui-grid-a">
+
+       <div class="ui-block-a">
+
+          <div class="ui-bar">
+
+          	      
+
+          	      
+
+                 <a href="/employees/new" data-role="none"><%=image_tag 'ic_action_user_add.png'%></a>
+                 <span class="icon_text">Hire</span>
+
+            </div>
+       </div>
+
+
+        <div class="ui-block-b">
+                             
+          <div class="ui-bar">
+
+            
+          	<a href="/employees/new" data-role="none"><%=image_tag 'ic_action_paste.png'%></a>
+           <span class="icon_text">Employee List</span></div>
+       </div>
+
+
+
+
+        
+
+	</div>
+
+     
+ 
+</div>

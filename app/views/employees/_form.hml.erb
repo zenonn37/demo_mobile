@@ -1,0 +1,49 @@
+<div data-role="header">
+	<h1>Hire Employee</h1>
+
+
+</div>
+
+
+<div data-role="content">
+
+	<%=form_for(@employees) do |f|%>
+
+	<label for="first">First:</label>
+    
+     <input type="text" name="employee[first]" id="first" placeholder="Enter First Name" />
+
+
+
+    <label for="last">Last:</label>
+    
+     <input type="text" name="employee[last]" id="last" placeholder="Enter Last Name" />
+
+
+     <label for="middle">Middle:</label>
+    
+     <input type="text" name="employee[middle]" id="middle" placeholder="Enter Last Name" />
+
+
+
+     <label for="email">Email:</label>
+    
+     <input type="text" name="client[email]" id="email" placeholder="Enter Email" />
+     <label for="phone">Phone:</label>
+    
+     <input type="tel" name="client[phone]" id="phone" placeholder="Enter Phone" />
+     <select name="client[active] data-native-menu="false" data-theme="a">
+
+     <option value="null" data-placeholder="true">Client Status</option>
+      <option value="true" data-placeholder="true">Client Active</option>
+       <option value="false" data-placeholder="true">Client Not-Active</option>
+
+     </select>
+
+
+    
+    
+
+     <%=f.button :submit%>
+
+	<%end%>
