@@ -48,13 +48,13 @@ test:
   encoding: unicode
   database: demo_mobile_test
   pool: 5
-  username: demo_mobile
-  password:
+  username: postgres
+  password: zen
 
 production:
   adapter: postgresql
   encoding: unicode
   database: demo_mobile_production
   pool: 5
-  username: demo_mobile
-  password:
+  username: postgres
+  password: zen

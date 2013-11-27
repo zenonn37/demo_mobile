@@ -1,0 +1,74 @@
+
+
+
+<div data-role="content">
+
+	<%=form_for(@employees) do |f|%>
+sx
+	<label for="first">First:</label>
+    
+     <input type="text" name="employee[first]" id="first" placeholder="Enter First Name" />
+
+
+
+    <label for="last">Last:</label>
+    
+     <input type="text" name="employee[last]" id="last" placeholder="Enter Last Name" />
+
+
+     <label for="middle">Middle:</label>
+    
+     <input type="text" name="employee[middle]" id="middle" placeholder="Enter Last Name" />
+
+
+       <label for="birth">Birthday:</label>
+    
+     <input type="text" name="employee[birth]" id="birth" placeholder="Enter Birthday" />
+
+
+
+
+     <label for="email">Email:</label>
+    
+     <input type="text" name="employee[email]" id="email" placeholder="Enter Email" />
+
+     <label for="phone">Phone:</label>
+    
+     <input type="tel" name="employee[phone]" id="phone" placeholder="Enter Phone" />
+
+
+     <label for="street">Street:</label>
+    
+     <input type="text" name="employee[street]" id="street" placeholder="Enter Street" />
+
+
+      <label for="city">City:</label>
+    
+     <input type="text" name="employee[city]" id="city" placeholder="Enter City" />
+
+
+     <label for="state">State</label>
+    
+     <input type="text" name="employee[state]" id="state" placeholder="Enter State" />
+
+
+     <label for="employeeid">Employee ID</label>
+    
+     <input type="text" name="employee[employeeid]" id="employeeid" placeholder="Enter ID" />
+
+      <label for="hire">Hire Date </label>
+     <input id="hire" name="employee[hire]" type="month" />
+
+    
+
+
+
+     
+
+
+    
+    
+
+     <%=f.button :submit%>
+
+	<%end%>
