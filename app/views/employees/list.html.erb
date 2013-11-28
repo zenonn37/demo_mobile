@@ -1,0 +1,39 @@
+<div data-role="header">
+
+<h1>Employee Roster</h1>
+  
+</div>
+
+
+
+<div data-role="content">
+
+
+	<ol data-role="listview" data-split-icon="star" data-split-theme="c" data-filter="true" data-filter-placeholder="Enter Empployee">
+
+
+		<%@employees.each do |employee|%>
+
+		<li><%= link_to "#{employee.first}", employee,:data => {:transition=>"slide"}%>
+
+                  <%= link_to 'Edit', edit_employee_path(employee)%>
+              
+		</li>
+
+
+     
+   
+        <%end%>
+
+	</ol>
+
+
+
+</div>
+
+
+<div data-role="footer">
+
+
+
+</div>

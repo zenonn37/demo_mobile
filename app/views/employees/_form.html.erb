@@ -4,7 +4,7 @@
 <div data-role="content">
 
 	<%=form_for(@employees) do |f|%>
-sx
+
 	<label for="first">First:</label>
     
      <input type="text" name="employee[first]" id="first" placeholder="Enter First Name" />
@@ -23,7 +23,7 @@ sx
 
        <label for="birth">Birthday:</label>
     
-     <input type="text" name="employee[birth]" id="birth" placeholder="Enter Birthday" />
+     <input type="date" name="employee[birth]" id="birth" value=""  />
 
 
 

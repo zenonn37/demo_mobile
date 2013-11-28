@@ -1,2 +1,44 @@
-<h1>Employees#show</h1>
-<p>Find me in app/views/employees/show.html.erb</p>
+<div data-role="header">
+	
+
+	<a href="/employees/dashboard" data-icon="home"  data-transition="slide" data-iconpos="notext">Employee Home</a>
+<h1>Employee Datasheet</h1>
+   <%= link_to 'Edit', edit_employee_path(@employees),:data =>{"icon"=>"edit"}%>
+<a href="/emplo"></a>
+
+</div>
+
+
+<div data-role="content">
+
+	<ul data-role="listview" data-inset="true" data-theme="a" >
+
+		
+         <li data-role="list-divider" data-divider-theme="c">Name</li>
+		<li><%=@employees.first%><p class="ui-li-aside"><%=@employees.last%></p></li>
+		 <li data-role="list-divider">Email</li>
+			<li><%=@employees.email%></li>
+			 <li data-role="list-divider">Phone</li>
+				<li><%=@employees.phone%>
+					 <li data-role="list-divider">Birthday</li>
+				<li><%=@employees.birth%>
+					 <li data-role="list-divider">Street Address</li>
+				<li><%=@employees.street%>
+					 <li data-role="list-divider">City/State</li>
+				<li><%=@employees.city%><p class="ui-li-aside"><%=@employees.state%></p>
+					 <li data-role="list-divider">Hire Date</li>
+					 <li><%=@employees.hire%></li>
+
+                
+				</li>
+
+   
+       
+
+	</ul>
+
+</div>
+
+
+<div data-role="footer" data-position="fixed">Footer</div>
+

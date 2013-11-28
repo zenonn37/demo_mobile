@@ -1,8 +1,11 @@
 DemoMobile::Application.routes.draw do
+  resources :clients
+
   root to: 'spring_boards#dashboard'
 
 
   get "employees/dashboard"
+  get "employees/list"
   get "employees/new"
   get "employees/show"
   get "employees/edit"
